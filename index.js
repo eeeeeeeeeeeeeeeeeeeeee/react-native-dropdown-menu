@@ -13,7 +13,7 @@ import {View, Text, TouchableHighlight, Image, TouchableOpacity, ScrollView, Ani
       selectIndex[i] = 0;
     }
     this.state = {
-      activityIndex: -1,
+      activityIndex: props.activityIndex,
       selectIndex: selectIndex,
       rotationAnims: props.data.map(() => new Animated.Value(0))
     };
